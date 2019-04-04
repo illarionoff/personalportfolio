@@ -3,15 +3,20 @@ button {
 
   border: none;
   margin: 20px 0;
-  padding: 20px 30px;
+
   &:hover {
     cursor: pointer;
   }
 
   &.action {
     a {
+      display: block;
       text-transform: uppercase;
       font-size: 1.4rem;
+      line-height: 50px;
+      width: 150px;
+      height: 50px;
+      border: 1px solid white;
     }
   }
   &.light {

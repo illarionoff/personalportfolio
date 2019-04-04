@@ -9,6 +9,10 @@
           box-sizing: border-box;
 }
 
+*:focus {
+  outline: none !important;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -67,7 +71,8 @@ h4 {
 a,
 a:focus,
 a:active,
-a:hover {
+a:hover,
+a:visited {
   font-size: 2.4rem;
   color: black;
   text-decoration: none;
@@ -214,7 +219,6 @@ button {
   cursor: pointer;
   border: none;
   margin: 20px 0;
-  padding: 20px 30px;
 }
 
 button:hover {
@@ -222,8 +226,13 @@ button:hover {
 }
 
 button.action a {
+  display: block;
   text-transform: uppercase;
   font-size: 1.4rem;
+  line-height: 50px;
+  width: 150px;
+  height: 50px;
+  border: 1px solid white;
 }
 
 button.light {
