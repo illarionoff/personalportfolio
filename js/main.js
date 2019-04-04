@@ -1,7 +1,6 @@
-const toggle = document.getElementById("toggle");
-var body = document.getElementsByTagName("BODY")[0];
-
 const toggleMenu = function() {
+  const toggle = document.getElementById("toggle");
+  const body = document.getElementsByTagName("BODY")[0];
   document.getElementById("nav").classList.toggle("show");
   toggle.classList.toggle("on");
   body.classList.toggle("menu-open");
